@@ -57,7 +57,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
-  background-color: #E3E6F3; /*COR DO FUNDO DA BARRA DE NAVEGAÇÃO-HEADER*/
+  background-color: #d6d6e2; /*COR DO FUNDO DA BARRA DE NAVEGAÇÃO-HEADER*/
   box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
 }
 
@@ -70,6 +70,7 @@ body {
 #navbar li{
   list-style: none;
   padding: 0 20px;
+  position: relative;
 }
 
 #navbar li a{
@@ -79,8 +80,33 @@ body {
   color: #1a1a1a; /* COR DA LETRA BARRA NAV */
   transition: 0.3s ease;
 }
-
+/* a:hover a.active são para dar os efeitos assim que passar o mouse por cima das opções na barra
+de navegação */
 #navbar li a:hover,
 #navbar li a.active{ 
   color: #088178; /*  COR DAS LETRAS AO PASSAR O MOUSE POR CIMA - BARRA NAV */
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{ 
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #088178;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+#hero {
+  background-image: url("img/hero4.png");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
