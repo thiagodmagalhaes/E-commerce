@@ -56,9 +56,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 1px;
   padding: 20px 80px;
   background-color: #d6d6e2; /*COR DO FUNDO DA BARRA DE NAVEGAÇÃO-HEADER*/
   box-shadow: 0 5px 15px rgb(0, 0, 0, 0.6);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 #navbar{
@@ -109,4 +114,26 @@ de navegação */
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+}
+
+#hero h4{
+  padding-bottom: 15px ;
+}
+
+#hero h1{
+  color: #088178 ;
+}
+
+
+#hero button{
+  background-image: url("img/button.png");
+  background-color: transparent;
+  color:#088178;
+  border: 0;
+  padding: 14px 80px 14px 65px; 
+  background-repeat: no-repeat;
+  cursor: pointer; 
+  font-weight: 700;
+  font-size: 15px;
+  
 }
