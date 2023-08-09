@@ -52,7 +52,8 @@ body {
   width: 100%;
 }
 
-#header{
+/* style barra de navegação onde fica "Inicio, Compras, Blog, Sobre, Contato" */
+#header{ 
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,32 +67,36 @@ body {
   left: 0;
 }
 
+/* ajuste das posições do "Inicio, Compras, Blog, Sobre, Contato" */
 #navbar{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+/* ajuste das posições do "Inicio, Compras, Blog, Sobre, Contato" */
 #navbar li{
   list-style: none;
   padding: 0 20px;
   position: relative;
 }
 
-#navbar li a{
+/* ajuste style do "Inicio, Compras, Blog, Sobre, Contato" */
+#navbar li a{ 
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
-  color: #1a1a1a; /* COR DA LETRA BARRA NAV */
+  color: #1a1a1a; /* COR DA LETRA BARRA NAV("Inicio, Compras, Blog, Sobre, Contato") */
   transition: 0.3s ease;
 }
 /* a:hover a.active são para dar os efeitos assim que passar o mouse por cima das opções na barra
 de navegação */
 #navbar li a:hover,
 #navbar li a.active{ 
-  color: #088178; /*  COR DAS LETRAS AO PASSAR O MOUSE POR CIMA - BARRA NAV */
+  color: #088178; /*  MUDA A COR AO PASSAR O MOUSE POR CIMA ("Inicio, Compras, Blog, Sobre, Contato")*/
 }
 
+/* Muda Style ao passar mouse por cima  ("Inicio, Compras, Blog, Sobre, Contato") e sublinha a página que está */
 #navbar li a.active::after,
 #navbar li a:hover::after{ 
   content: "";
@@ -103,6 +108,7 @@ de navegação */
   left: 20px;
 }
 
+/* style e ajustes para imagem da página inicial, onde está as orfetas */
 #hero {
   background-image: url("img/hero4.png");
   height: 90vh;
@@ -124,8 +130,8 @@ de navegação */
   color: #088178 ;
 }
 
-
-#hero button{
+/* style do botão "Comprar Agora" */
+#hero button{ 
   background-image: url("img/button.png");
   background-color: transparent;
   color:#088178;
@@ -138,6 +144,15 @@ de navegação */
   
 }
 
+/*ajustes para items que ficaram na parte inferior da página "Frete gratis ...."*/
+#feature{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* box "frete gratis" */
 #feature .fe-box{
   width: 180px;
   text-align: center;
@@ -149,7 +164,8 @@ de navegação */
 
 }
 
-#feature .fe-box:hover{
+/*efeito deixar verde ao passar mouse por cima do item "frete gratis"*/
+#feature .fe-box:hover{ 
   box-shadow: 10px 10px 54px rgba(33, 240, 102, 0.3);
 }
 
