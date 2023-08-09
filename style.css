@@ -149,7 +149,7 @@ de navegação */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;  
 }
 
 /* box "frete gratis" */
@@ -160,7 +160,7 @@ de navegação */
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
   border: 1px solid #cce7d0;
   border-radius: 4px;
-  margin: 15px 0;
+  margin: 15px 5px;
 
 }
 
@@ -168,13 +168,42 @@ de navegação */
 #feature .fe-box:hover{ 
   box-shadow: 10px 10px 54px rgba(33, 240, 102, 0.3);
 }
+/* ajuste da imagem que ficará dentro dos box "frete gratis, pedido online..." */
+#feature .fe-box img{
+  width: 100%;
+  margin-bottom: 10px;
+}
 
 #feature .fe-box h6{
+  display: inline-block;
   padding: 9px 8px 6px 8px;
   line-height: 1;
   border-radius: 4px;
   color:#088178;
-  background-color: #fddde4;
-  
+  background-color: #3fc0e0;
+}
 
+
+/* div fe-box é a divisão pai dos box "frete gratis, pedido online....", nth-child serve
+para ajustar os box filhos, de acordo com a ordem que foi colocado no index,
+logo o filho 2 é pedido online, 3  economize e assim por diante
+iremos alterar a cor de cada "FUNDO" onde está escrito Frete gratis, pedido online ... */
+#feature .fe-box:nth-child(2) h6{
+  background-color:  #fddde4;
+}
+
+#feature .fe-box:nth-child(3) h6{
+  background-color: #8de4a2;
+}
+
+#feature .fe-box:nth-child(4) h6{
+  background-color: #83e7eb;
+}
+
+#feature .fe-box:nth-child(5) h6{
+  background-color: #c875f8;
+}
+
+#feature .fe-box:nth-child(6) h6{
+  background-color: #f0a569;
 }
