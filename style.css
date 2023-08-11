@@ -10,7 +10,15 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Global Styles */
+/* Global Styles 
+Style.css: utiliza #XXXX para  <section class="XXXX">
+.XXXX para o cada camada criada dentro da section EXEMPLO:
+(OBJS: CASO SEJA FUNCOES/TAGS EXISTENTES DO CÓDIGO, h1,h2,h3,span,button não precisa utilizar .)
+<section id="YYYY" class="XXXX">   style.css: #YYYY.XXXX{} 
+Caso seja <section id="YYYY"> 
+            <a class="active">
+Style.css #YYYY.a.active{}
+*/
 
 h1 {
   font-size: 50px;
@@ -46,6 +54,19 @@ p {
 
 .section-m1 {
   margin: 40px 0;
+}
+
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 13px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transform: 0.2s;
 }
 
 body {
@@ -288,6 +309,46 @@ iremos alterar a cor de cada "FUNDO" onde está escrito Frete gratis, pedido onl
   background-image: url("img/banner/b1.jpg");
   width: 100%;
   height: 40vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner h4{
+  color: #e8f6ea;
+  font-size: 16px;
+}
+
+#banner h2{
+  color: #e8f6ea;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+#banner h2 span{
+  color: #e62222;
+
+}
+
+#banner button:hover{
+  background-color: #088178;
+  color: #fff;
+}
+
+/* sm-banner é os banners que ficarão abaixo da "Nova Coleção" */
+#sm-banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#sm-banner .banner-box{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("img/banner/b17.jpg");
+  width: 500px;
+  height: 50vh;
   background-size: cover;
   background-position: center;
 }
