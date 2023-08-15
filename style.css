@@ -351,4 +351,51 @@ iremos alterar a cor de cada "FUNDO" onde está escrito Frete gratis, pedido onl
   height: 50vh;
   background-size: cover;
   background-position: center;
+  padding: 30px;
+}
+
+
+#sm-banner .banner-box2{
+  background-image: url("img/banner/b10.jpg");
+}
+
+#sm-banner h4{
+  color: #fff;
+  font-size: 20px; /* tamanho da letra */
+  font-weight: 300; /* tamanho da expressura da letra */
+}
+
+
+#sm-banner h2{
+  color: #fff;
+  font-size: 28px; /* tamanho da letra */
+  font-weight: 800; /* tamanho da expressura da letra */
+}
+
+#sm-banner span{
+  color: #fff;
+  font-size: 14px; /* tamanho da letra */
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+#sm-banner button{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 11px 18px;
+  border-color: #fff;
+  cursor: pointer;
+  border: 1px solid;
+  background-color: transparent;
+  width: 100px;
+  height: 5vh;
+  outline: none;
+  transition: 0.2s;
+}
+
+#sm-banner button:hover{
+  background-color: #088178;
+  color: #fff ;
+  border-color: #088178;
 }
