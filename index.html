@@ -1,391 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech2etc Ecommerce Tutorial</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tech2etc Ecommerce Tutorial</title>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <!-header é a barra de navegação onde contem INICIO/CONTATO/...->
-       <section id="header">
-            <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
-            <div>
-                <ul id="navbar">
-                    <li><a class="active" href="index.html">Inicio</a></li>
-                    <li><a href="shop.html">Compras</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="carrinhodecompras.html"><i class="far fa-shopping-bag"></i></a></li>
-                </ul>
+  <body>
+    <!-header é a barra de navegação onde contem INICIO/CONTATO/...->
+    <section id="header">
+      <a href="#"><img src="img/logo.png" class="logo" alt="" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a class="active" href="index.html">Inicio</a></li>
+          <li><a href="shop.html">Compras</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li>
+            <a href="carrinhodecompras.html"
+              ><i class="far fa-shopping-bag"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-hero é onde ficará as informações no meio da tela, como Ofertas...->
+    <section id="hero">
+      <h4>Ofertas</h4>
+      <h2>Super descontos</h2>
+      <h1>TODOS PRODUTOS</h1>
+      <p>Cupoms com 70% de descontos</p>
+      <button>Comprar Agora</button>
+    </section>
+    <!-feature é a parte inferior do site onde ficará outra barra contendo "Frete gratis, Pedido online"...->
+    <section id="feature" class="section-p1">
+      <div class="fe-box">
+        <img src="img/features/f1.png" />
+        <h6>Frete Grátis</h6>
+      </div>
+      <div class="fe-box">
+        <img src="img/features/f2.png" />
+        <h6>Pedido Online</h6>
+      </div>
+      <div class="fe-box">
+        <img src="img/features/f3.png" />
+        <h6>Economize</h6>
+      </div>
+      <div class="fe-box">
+        <img src="img/features/f4.png" />
+        <h6>Promoção</h6>
+      </div>
+      <div class="fe-box">
+        <img src="img/features/f5.png" />
+        <h6>Venda Feliz</h6>
+      </div>
+      <div class="fe-box">
+        <img src="img/features/f6.png" />
+        <h6>Suporte</h6>
+      </div>
+    </section>
+    <!-product é onde ficará os "Produtos em destaque" na parte inferior da tela...->
+    <section id="product1" class="section-p1">
+      <h2>Produtos em destaque</h2>
+      <p>Coleção de verão com novos modelos</p>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="img/produtos/f1.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
-       </section>
-       <!-hero é onde ficará as informações no meio da tela, como Ofertas...->
-       <section id="hero">
-            <h4>Ofertas</h4>
-            <h2>Super descontos</h2>
-            <h1>TODOS PRODUTOS</h1>
-            <p>Cupoms com 70% de descontos</p>
-            <button>Comprar Agora</button>
-
-       </section>
-       <!-feature é a parte inferior do site onde ficará outra barra contendo "Frete gratis, Pedido online"...->
-       <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="img/features/f1.png">
-            <h6>Frete Grátis</h6>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
-        <div class="fe-box">
-            <img src="img/features/f2.png">
-            <h6>Pedido Online</h6>
+        <div class="pro">
+          <img src="img/produtos/f2.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
-        <div class="fe-box">
-            <img src="img/features/f3.png">
-            <h6>Economize</h6>
+        <div class="pro">
+          <img src="img/produtos/f3.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
-        <div class="fe-box">
-            <img src="img/features/f4.png">
-            <h6>Promoção</h6>
+        <div class="pro">
+          <img src="img/produtos/f4.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
-        <div class="fe-box">
-            <img src="img/features/f5.png">
-            <h6>Venda Feliz</h6>
+        <div class="pro">
+          <img src="img/produtos/f5.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
-        <div class="fe-box">
-            <img src="img/features/f6.png">
-            <h6>Suporte</h6>
+        <div class="pro">
+          <img src="img/produtos/f6.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
         </div>
-       </section>
-       <!-product é onde ficará os "Produtos em destaque" na parte inferior da tela...->
-       <section id="product1" class="section-p1">
-            <h2>Produtos em destaque</h2>
-            <p>Coleção de verão com novos modelos</p>
-            <div class="pro-container">
-                <div class="pro">
-                    <img src="img/produtos/f1.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/produtos/f2.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/produtos/f3.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/produtos/f4.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/produtos/f5.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/produtos/f6.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/produtos/f7.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/produtos/f8.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
+        <div class="pro">
+          <img src="img/produtos/f7.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
             </div>
-       </section>
-       <!-banner é a o banner que ficará na parte inferior do site depois dos produtos em destaque->
-       <section id="banner" class="section-m1">
-            <h4>ATENÇÃO!!!</h4>
-            <h2>Até<span>  70% de desconto</span> - Todas camisas T-shirt & Acessórios</h2>
-            <button class="normal">Abrir</button>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/produtos/f8.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+      </div>
+    </section>
+    <!-banner é a o banner que ficará na parte inferior do site depois dos produtos em destaque->
+    <section id="banner" class="section-m1">
+      <h4>ATENÇÃO!!!</h4>
+      <h2>
+        Até<span> 70% de desconto</span> - Todas camisas T-shirt & Acessórios
+      </h2>
+      <button class="normal">Abrir</button>
+    </section>
+    <!-product é onde ficará os produtos da "Nova Coleção" na parte inferior da tela...->
+    <section id="product1" class="section-p1">
+      <h2>Nova Coleção</h2>
+      <p>Coleção de verão com novos modelos</p>
+      <div class="pro-container">
+        <div class="pro">
+          <img src="img/produtos/n1.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/produtos/n2.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/produtos/n3.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/produtos/n4.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/produtos/n5.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/produtos/n6.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/produtos/n7.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+        <div class="pro">
+          <img src="img/produtos/n8.jpg" alt="" />
+          <div class="des">
+            <span>Adidas</span>
+            <h5>Camisa Astronauta</h5>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>R$78</h4>
+          </div>
+          <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+        </div>
+      </div>
+    </section>
+    <!- sm-banner onde ficará "Banner separando cada coleção/parte do site" ->
+    <section id="sm-banner" class="section-p1">
+      <div class="banner-box">
+        <h4>Oferta maluca</h4>
+        <h2>Compre 1, Leve 2</h2>
+        <span>Os melhores vestidos em promoção</span>
+        <button>Explorar</button>
+      </div>
+      <div class="banner-box banner-box2">
+        <h4>Verão</h4>
+        <h2>Novas peças de verão</h2>
+        <span>Os modelos que são a sua cara</span>
+        <button>Explorar</button>
+      </div>
+    </section>
+    <!- banner3 onde ficará os "Banners" menores na parte inferior do site ->
+    <section id="banner3">
+      <div class="banner-box">
+        <h2>SECÃO OFERTAS</h2>
+        <h3>
+          <span class="novospan">Coleção com <span>-50%</span> OFF</span>
+        </h3>
+      </div>
+      <div class="banner-box banner-box2">
+        <h2>CALÇADOS</h2>
+        <h3>
+          <span class="novospan">Coleção com <span>-50%</span> OFF</span>
+        </h3>
+      </div>
+      <div class="banner-box banner-box3">
+        <h2>CAMISAS</h2>
+        <h3>
+          <span class="novospan">Coleção com <span>-50%</span> OFF</span>
+        </h3>
+      </div>
+    </section>
 
-       </section>
-       <!-product é onde ficará os produtos da "Nova Coleção" na parte inferior da tela...->
-       <section id="product1" class="section-p1">
-            <h2>Nova Coleção</h2>
-            <p>Coleção de verão com novos modelos</p>
-            <div class="pro-container">
-                <div class="pro">
-                    <img src="img/produtos/n1.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/produtos/n2.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/produtos/n3.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/produtos/n4.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/produtos/n5.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/produtos/n6.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/produtos/n7.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/produtos/n8.jpg" alt=""> 
-                    <div class="des">
-                        <span>Adidas</span>
-                        <h5>Camisa Astronauta</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <h4> R$78 </h4>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-            </div>
-       </section>
-       <!- sm-banner onde ficará "Banner separando cada coleção/parte do site" ->
-       <section id="sm-banner" class="section-p1">
-            <div class="banner-box">
-                <h4>Oferta maluca</h4>
-                <h2>Compre 1, Leve 2</h2>
-                <span>Os melhores vestidos em promoção</span>
-                <button>Explorar</button>
-            </div>
-            <div class="banner-box banner-box2">
-                <h4>Verão</h4>
-                <h2>Novas peças de verão</h2>
-                <span>Os modelos que são a sua cara</span>
-                <button>Explorar</button>
-            </div>
-       </section>     
-       <!- banner3 onde ficará os "Banners" menores na parte inferior do site ->
-       <section id="banner3">
-            <div class="banner-box">
-                <h2>SECÃO OFERTAS</h2>
-                <h3><span class="novospan">Coleção com <span>-50%</span> OFF</span></h3>
-            </div>
-            <div class="banner-box banner-box2">
-                <h2>CALÇADOS </h2>
-                <h3><span class="novospan">Coleção com <span>-50%</span> OFF</span></h3>
-            </div>
-            <div class="banner-box banner-box3">
-                <h2>CAMISAS</h2>
-                <h3><span class="novospan">Coleção com <span>-50%</span> OFF</span></h3>
-            </div>
-       </section>
+    <!- seção que contém os banners menores no final da página ->
+    <section id="newsletter" class="section-p1 section-m1">
+      <div class="newstext">
+        <h4>Cadastre para receber promoções</h4>
+        <p>
+          Insira seu email para receber notificações e
+          <span>OFERTAS ESPECIAIS</span>
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Seu e-mail" />
+        <button class="normal">Enviar</button>
+      </div>
+    </section>
 
-       <section id="newsletter" class="section-p1 section-m1">
-            <div class="newstext">
-                <h4>Cadastre para receber promoções</h4>
-                <p>Insira seu email para receber notificações e <span>OFERTAS ESPECIAIS</span></p>
-            </div>
-            <div class="form">
-                <input type="text" placeholder="Seu e-mail">
-                <button class="normal">Enviar</button>
-            </div>
-        
-       </section>
+    <!- footer rodapé ->
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logo" src="img/logo.png" alt="" />
+        <h4>Contato</h4>
+        <p><strong>Endereço:</strong> Rua qualquer 11, Belo Horizonte/MG</p>
+        <p><strong>Telefone:</strong> (31) 9 9999-9999</p>
+        <p><strong>Horário de funcionamento:</strong> De 8:00 às 18:00.</p>
+        <div class="follow">
+          <h4>Sugue a gente</h4>
+          <div class="icon">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>Sobre</h4>
+        <a href="#">Sobre nós</a>
+        <a href="#">Informações</a>
+        <a href="#">Política de privacidade</a>
+        <a href="#">Termos e condições</a>
+        <a href="#">Fale conosco</a>
+      </div>
+      <div class="col">
+        <h4>Minha conta</h4>
+        <a href="#">Logar</a>
+        <a href="#">Carrinho</a>
+        <a href="#">Minha Lista</a>
+        <a href="#">Meus Pedidos</a>
+        <a href="#">Ajuda</a>
+      </div>
+      <div class="col install">
+        <h4>Instalar app</h4>
+        <p>Baixe app PlayStore ou AppleStore</p>
+        <div class="row">
+            <img src="img/pagamento/app.jpg" alt="">
+            <img src="img/pagamento/play.jpg" alt="">
+        </div>
+        <p>Método Seguro de Pagamento</p>
+        <img src="img/pagamento/pay.png" alt="">
+      </div>
+      <div class="copyright">
+        <p>© 2023, Thiago Magalhães - HTML CSS - Site Ecommerce</p>
+      </div>
+    </footer>
 
-
-
-
-        <script src="script.js"></script>
-    </body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
