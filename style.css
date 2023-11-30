@@ -6,6 +6,7 @@
   font-family: "Spartan", sans-serif;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
@@ -120,6 +121,7 @@ de navegação */
 /* Muda Style ao passar mouse por cima  ("Inicio, Compras, Blog, Sobre, Contato") e sublinha a página que está */
 #navbar li a.active::after,
 #navbar li a:hover::after{ 
+  
   content: "";
   width: 30%;
   height: 2px;
@@ -127,6 +129,11 @@ de navegação */
   position: absolute;
   bottom: -4px;
   left: 20px;
+}
+
+#mobile{
+  display: none;
+  align-items: center;
 }
 
 /* style e ajustes para imagem da página inicial, onde está as orfetas */
@@ -228,6 +235,70 @@ iremos alterar a cor de cada "FUNDO" onde está escrito Frete gratis, pedido onl
 #feature .fe-box:nth-child(6) h6{
   background-color: #f0a569;
 }
+
+
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;  
+  padding: 40px 80px;
+}
+
+.div1{
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 5px;
+}
+
+
+#feature .container .row .div1 h6{
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color:#088178;
+  background-color: #3fc0e0;
+}
+
+
+#feature .container .div1:hover{ 
+  box-shadow: 10px 10px 54px rgba(33, 240, 102, 0.3);
+}
+/* ajuste da imagem que ficará dentro dos box "frete gratis, pedido online..." */
+#feature .container .div1 img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#feature .container .div1:nth-child(2) h6{
+  background-color:  #fddde4;
+}
+
+#feature .container .div1:nth-child(3) h6{
+  background-color: #8de4a2;
+}
+
+#feature .container .div1:nth-child(4) h6{
+  background-color: #83e7eb;
+}
+
+#feature .container .div1:nth-child(5) h6{
+  background-color: #c875f8;
+}
+
+#feature .container .div1:nth-child(6) h6{
+  background-color: #f0a569;
+}
+
+
+
+
 
 /* div product onde ficarão os produtos de destaque, ajutes e style de toda div */
 #product1{
@@ -569,4 +640,54 @@ footer .install img{
 footer .copyright{
   width: 100%;
   text-align: center;
+}
+
+
+
+/* CONFIGURAÇÔES DE RESPONSIVIDADE */
+
+
+@media (max-width:799px){
+  .logo {
+    display: block;
+    position: absolute;
+    right: 0;
+    padding-right: 15%;
+    top: 0; /* Para alinhar no topo da seção */
+  }
+
+  #navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 70vh;
+    width: 300px;
+    background-color: #d6d6e2;
+    box-shadow: 0 40px 60px rgb(85, 80, 80);
+    padding: 80px 0 0 10px;
+
+
+  }
+
+  #navbar li{
+    margin-bottom: 25px;
+  }
+  #mobile {
+    position: absolute;
+    left: 0;
+    top: 50%; /* Ajuste conforme necessário */
+    transform: translateY(-50%);
+    display: flex;
+    align-items: right;
+  }
+  
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
 }

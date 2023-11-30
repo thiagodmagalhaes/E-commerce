@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech2etc Ecommerce Tutorial</title>
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    />
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    
   </head>
 
   <body>
-    <!-header é a barra de navegação onde contem INICIO/CONTATO/...->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+<!-header é a barra de navegação onde contem INICIO/CONTATO/...->
     <section id="header">
       <a href="#"><img src="img/logo.png" class="logo" alt="" /></a>
       <div>
@@ -24,13 +29,18 @@
           <li><a href="blog.html">Blog</a></li>
           <li><a href="sobre.html">Sobre</a></li>
           <li><a href="contato.html">Contato</a></li>
-          <li>
-            <a href="carrinhodecompras.html"
-              ><i class="far fa-shopping-bag"></i
-            ></a>
-          </li>
-        </ul>
+          <li><a href="carrinhodecompras.html"><i class="far fa-shopping-bag"></i></a></li>
+          
+        </ul> 
       </div>
+      <div id="mobile">
+        <a href="carrinhodecompras.html"><i class="far fa-shopping-bag"></i></a>
+        <i id="bar" class="fa fa-outdent" onclick="openNav()"></i>
+
+      </div>
+     
+
+    
     </section>
     <!-hero é onde ficará as informações no meio da tela, como Ofertas...->
     <section id="hero">
@@ -42,30 +52,119 @@
     </section>
     <!-feature é a parte inferior do site onde ficará outra barra contendo "Frete gratis, Pedido online"...->
     <section id="feature" class="section-p1">
-      <div class="fe-box">
+     <!-- <div class="container">
+        <div class="row">
+          <div class="div1 col-lg-2 col-md-6 col-sm-12 col-xs-12"> <img src="img/features/f1.png" />
+            <h6>Frete Grátis</h6>
+          </div>
+          <div class="div1 col-lg-2 col-md-6 col-sm-12 col-xs-12"> <img src="img/features/f2.png" />
+            <h6>Pedido On</h6>
+          </div>
+          <div class="div1 col-lg-2 col-md-12 col-sm-12 col-xs-12"> <img src="img/features/f3.png" />
+            <h6>Ecomonize</h6>
+          </div>
+          <div class="div1 col-lg-2 col-md-12 col-sm-12 col-xs-12"> <img src="img/features/f4.png" />
+            <h6>Promoção</h6>
+          </div>
+          <div class="div1 col-lg-2 col-md-12 col-sm-12 col-xs-12"> <img src="img/features/f5.png" />
+            <h6>Venda Feliz</h6>
+          </div>
+          <div class="div1 col-lg-2 col-md-12 col-sm-12 col-xs-12"> <img src="img/features/f6.png" />
+            <h6>Suporte</h6>
+          </div>
+        </div>
+      </div>
+    -->
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="row">
+            <div class="col-6 col-sm-6">
+              <div class="div1"> <img src="img/features/f1.png" />
+                <h6>Frete Grátis</h6></div>
+            </div>
+            <div class="col-6 col-sm-6">
+              <div class="div1"> <img src="img/features/f2.png" />
+                <h6>Pedido On</h6></div>
+            </div>
+            
+          </div>
+         
+  
+        </div>
+      
+
+      </div>
+      
+
+         
+
+
+          <div class="div1"> <img src="img/features/f3.png" />
+            <h6>Ecomonize</h6></div>
+
+
+          <div class="div1"> <img src="img/features/f4.png" />
+            <h6>Promoção</h6></div>
+
+
+          <div class="div1"> <img src="img/features/f5.png" />
+            <h6>Venda Feliz</h6></div>
+
+
+          <div class="div1"> <img src="img/features/f6.png" />
+            <h6>Suporte</h6></div>
+        
+        
+    </div>
+       <!-- 
+          <div class="fe-box ">
+            <img src="img/features/f2.png" />
+            <h6>Pedido On</h6>
+          </div>
+          <div class="col-md-2 fe-box">
+            <img src="img/features/f2.png" />
+            <h6>Economize</h6>
+          </div>
+          <div class="fe-box col-md-2">
+            <img src="img/features/f2.png" />
+            <h6>Promoção</h6>
+          </div>
+          <div class="fe-box col-md-2">
+            <img src="img/features/f2.png" />
+            <h6>Suporte</h6>
+          </div>
+
+        </div>
+
+      
+     
+      <div class="fe-box col-md-12">
         <img src="img/features/f1.png" />
         <h6>Frete Grátis</h6>
       </div>
-      <div class="fe-box">
+      <div class="fe-box col-md-2">
         <img src="img/features/f2.png" />
-        <h6>Pedido Online</h6>
+        <h6>Pedido On</h6>
       </div>
-      <div class="fe-box">
+      <div class="fe-box col-md-2">
         <img src="img/features/f3.png" />
         <h6>Economize</h6>
       </div>
-      <div class="fe-box">
+      <div class="fe-box col-md-2">
         <img src="img/features/f4.png" />
         <h6>Promoção</h6>
       </div>
-      <div class="fe-box">
+      <div class="fe-box col-md-2">
         <img src="img/features/f5.png" />
         <h6>Venda Feliz</h6>
       </div>
-      <div class="fe-box">
+      <div class="fe-box col-md-2">
         <img src="img/features/f6.png" />
         <h6>Suporte</h6>
       </div>
+      -->
+
     </section>
     <!-product é onde ficará os "Produtos em destaque" na parte inferior da tela...->
     <section id="product1" class="section-p1">
@@ -447,6 +546,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    
   </body>
 </html>
