@@ -188,7 +188,7 @@ de navegação */
   box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
   border: 1px solid #cce7d0;
   border-radius: 4px;
-  margin: 15px 5px;
+  margin: 15px 0px;
 
 }
 
@@ -216,6 +216,11 @@ de navegação */
 para ajustar os box filhos, de acordo com a ordem que foi colocado no index,
 logo o filho 2 é pedido online, 3  economize e assim por diante
 iremos alterar a cor de cada "FUNDO" onde está escrito Frete gratis, pedido online ... */
+
+#feature .fe-box:nth-child(1) h6{
+  background-color:  rgb(14, 216, 230)
+}
+
 #feature .fe-box:nth-child(2) h6{
   background-color:  #fddde4;
 }
@@ -236,65 +241,10 @@ iremos alterar a cor de cada "FUNDO" onde está escrito Frete gratis, pedido onl
   background-color: #f0a569;
 }
 
-
-
-.container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;  
-  padding: 40px 80px;
-}
-
-.div1{
-  width: 180px;
-  text-align: center;
-  padding: 25px 15px;
-  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
-  border: 1px solid #cce7d0;
-  border-radius: 4px;
-  margin: 15px 5px;
-}
-
-
-#feature .container .row .div1 h6{
-  display: inline-block;
-  padding: 9px 8px 6px 8px;
-  line-height: 1;
-  border-radius: 4px;
-  color:#088178;
-  background-color: #3fc0e0;
-}
-
-
-#feature .container .div1:hover{ 
-  box-shadow: 10px 10px 54px rgba(33, 240, 102, 0.3);
-}
-/* ajuste da imagem que ficará dentro dos box "frete gratis, pedido online..." */
-#feature .container .div1 img{
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-#feature .container .div1:nth-child(2) h6{
-  background-color:  #fddde4;
-}
-
-#feature .container .div1:nth-child(3) h6{
-  background-color: #8de4a2;
-}
-
-#feature .container .div1:nth-child(4) h6{
-  background-color: #83e7eb;
-}
-
-#feature .container .div1:nth-child(5) h6{
-  background-color: #c875f8;
-}
-
-#feature .container .div1:nth-child(6) h6{
+#feature .fe-box:nth-child(7) h6{
   background-color: #f0a569;
 }
+
 
 
 
@@ -648,6 +598,9 @@ footer .copyright{
 
 
 @media (max-width:799px){
+.section-p1{
+  padding: 40px 80;
+}
   .logo {
     display: block;
     position: absolute;
@@ -655,7 +608,6 @@ footer .copyright{
     padding-right: 15%;
     top: 0; /* Para alinhar no topo da seção */
   }
-
   #navbar{
     display: flex;
     flex-direction: column;
@@ -664,15 +616,12 @@ footer .copyright{
     position: fixed;
     top: 0;
     right: 0px;
-    height: 70vh;
+    height: 60vh;
     width: 300px;
     background-color: #d6d6e2;
     box-shadow: 0 40px 60px rgb(85, 80, 80);
     padding: 80px 0 0 10px;
-
-
   }
-
   #navbar li{
     margin-bottom: 25px;
   }
@@ -684,10 +633,140 @@ footer .copyright{
     display: flex;
     align-items: right;
   }
-  
   #mobile i {
     color: #1a1a1a;
     font-size: 24px;
     padding-left: 20px;
   }
+  #lg-bag{
+    display: none;
+  }
+
+  #hero {
+    height: 70vh;
+    padding: 10px 80px;
+    background-position: top 30% right 30%;
+  }
+  #feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #feature .fe-box {
+    width: calc(33.33% - 30px); /* Ajuste para ocupar 1/3 da largura com margens */
+    margin: 15px;
+    text-align: center;
+  }
+  #product1 .pro-container{
+    justify-content: center;
+  }
+  #product1 .pro{
+    margin: 15px;
+  }
+  #banner{
+    height: 20vh;
+  }
+  #sm-banner .banner-box{
+    min-width: 100%;
+    height: 30vh;
+  }
+  #banner3 {
+    padding: 0 40px;
+  }
+  #banner3 .banner-box{
+    width: 28%;
+  }
+  #newsletter .form{
+    width: 70%;
+  }
+
 }
+
+@media(max-width: 477px){
+  .section-p1{
+    padding: 20px;
+  }
+  h1{
+    font-size: 38px;
+  }
+  h2{
+    font-size: 32px;
+  }
+  #hero{
+    padding: 0 20px;
+    background-position: 55%;
+  }
+  #feature{
+    justify-content: space-between;
+  }
+  #feature .fe-box{
+    width: 155px;
+    margin: 0 0 15px 0;
+  }
+  #product1 .pro{
+    width: 100%;
+  }
+  #banner{
+    height: 40vh;
+  }
+  #sm-banner .banner-box{
+    height: 40vh;
+  }
+  #sm-banner .banner-box2{
+    margin-top: 20px;
+  }
+  #banner3{
+    padding: 0 20px;
+  }
+  #banner3 .banner-box{
+    width: 100%;
+  }
+  #newsletter{
+    padding: 40px 20px;
+  }
+  #newsletter .form{
+    width: 100%;
+  }
+
+  footer .copyright{
+    text-align: start;
+  }
+
+}
+
+
+/* CONFIGURAÇÕES PÁGINA SHOP */
+
+  #page-header{
+   background-image: url("img/banner/b1.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+  }
+
+  #page-header h2,
+  #page-header p{
+    color: #fff;
+  }
+  
+  #pagination{
+    text-align: center;
+  }
+
+  #pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+  }
+  #pagination a i{
+    font-size: 16px;
+    font-weight: 600;
+  }
